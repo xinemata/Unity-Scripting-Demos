@@ -13,7 +13,7 @@ public class basicAnimationDemo : MonoBehaviour
     void Start()
     {
 
-        transform.position = new Vector3 (0f, 0.5f, 1.5f);
+        //transform.position = new Vector3 (0f, 0.5f, 1.5f);
         
     }
 
