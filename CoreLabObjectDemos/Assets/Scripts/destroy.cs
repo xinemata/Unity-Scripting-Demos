@@ -4,9 +4,14 @@ using UnityEngine;
 
 public class destroy : MonoBehaviour
 {
+
+    AudioSource honk;
+
     // Start is called before the first frame update
     void Start()
     {
+
+        honk = GetComponent<AudioSource>();
         
     }
 
@@ -23,6 +28,7 @@ public class destroy : MonoBehaviour
             Debug.Log("Collided into other");
 
             Destroy(other.gameObject);
+            honk.Play(); // 
 
         }
 

@@ -326,6 +326,21 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 772419102}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75272fb58c0144af8ca8a0dd297cadf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  turtle: {fileID: 1643146912}
+  moveSpeed: 5
+  rotateSpeed: 80
+--- !u!114 &772419105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772419102}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9574da6bc7c6e4d3bba72c4f65ac531f, type: 3}
@@ -436,7 +451,7 @@ PrefabInstance:
     - target: {fileID: 3109171159942713684, guid: 56311cb44cd6240529c09c8995c7dce2,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3109171159942713684, guid: 56311cb44cd6240529c09c8995c7dce2,
         type: 3}

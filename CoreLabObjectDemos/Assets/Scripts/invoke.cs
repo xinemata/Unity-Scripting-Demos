@@ -10,7 +10,7 @@ public class invoke : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
         InvokeRepeating("MakeCar", 2, 1);
         
     }
@@ -22,11 +22,5 @@ public class invoke : MonoBehaviour
 
         Instantiate(car, new Vector3(x, 0.5f, z), Quaternion.identity);
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

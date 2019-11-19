@@ -9,6 +9,9 @@ public class basicAnimationDemo : MonoBehaviour
 
     public float moveSpeed = 5f;
     public float rotateSpeed = 80f;
+
+    private float y = 1;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,12 +29,20 @@ public class basicAnimationDemo : MonoBehaviour
             float dist = Vector3.Distance(turtle.position, transform.position);
 
             if (dist < 5f){
-                
-                if (transform.position.x >= turtle.position.x){
-                    transform.Rotate(Vector3.up * Time.deltaTime * rotateSpeed);
-                } else if (transform.position.x < turtle.position.x){
-                    transform.Rotate(Vector3.up * Time.deltaTime * -rotateSpeed);
+
+                transform.rotation = Quaternion.Euler(0f,y,0f);
+
+                if(y > 180){
+                    y -= Time.deltaTime * rotateSpeed;
+                } else if (y < 0){
+                    y += Time.deltaTime * rotateSpeed;
                 }
+                
+                // if (transform.position.x >= turtle.position.x){
+                //     transform.Rotate(Vector3.up * Time.deltaTime * rotateSpeed);
+                // } else if (transform.position.x < turtle.position.x){
+                //     transform.Rotate(Vector3.up * Time.deltaTime * -rotateSpeed);
+                // }
 
             Debug.Log("Too close!");
 

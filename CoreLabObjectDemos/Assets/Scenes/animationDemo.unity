@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 659472091}
   - component: {fileID: 659472096}
   - component: {fileID: 659472097}
+  - component: {fileID: 659472100}
   m_Layer: 0
   m_Name: turtle
   m_TagString: Untagged
@@ -247,6 +248,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   car: {fileID: 949038880}
+--- !u!114 &659472100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659472090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3d16600478542b8a6ba336d4ab7891, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &830696299
 GameObject:
   m_ObjectHideFlags: 0
@@ -329,6 +342,7 @@ GameObject:
   - component: {fileID: 949038882}
   - component: {fileID: 949038881}
   - component: {fileID: 949038885}
+  - component: {fileID: 949038886}
   m_Layer: 0
   m_Name: car
   m_TagString: Untagged
@@ -423,6 +437,102 @@ MonoBehaviour:
   turtle: {fileID: 659472095}
   moveSpeed: 5
   rotateSpeed: 80
+--- !u!82 &949038886
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 949038880}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d0b59fffd8f894723a47c01d136caad3, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1072111197
 GameObject:
   m_ObjectHideFlags: 0
@@ -792,6 +902,7 @@ GameObject:
   - component: {fileID: 1689166917}
   - component: {fileID: 1689166916}
   - component: {fileID: 1689166915}
+  - component: {fileID: 1689166920}
   m_Layer: 0
   m_Name: looker
   m_TagString: Untagged
@@ -884,6 +995,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1689166920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1689166914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1e525aacdc904a37bee36a049500bcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  rotateSpeed: 80
 --- !u!1 &1871819057 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1293605270326194, guid: c72f3f8a9daab2442b7dd148c087d333,
@@ -937,7 +1062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4a0805fbb95e43479afe1664e74b996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  turtle: {fileID: 659472090}
+  turtle: {fileID: 659472095}
 --- !u!65 &1997475410
 BoxCollider:
   m_ObjectHideFlags: 0
